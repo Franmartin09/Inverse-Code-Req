@@ -1,0 +1,44 @@
+[
+    {
+        "id": "REQ-001",
+        "title": "Exclusive Parkpilot Signal Detection",
+        "description": "The system shall detect when the parkpilot switch is pressed exclusively, without any other signals being active.",
+        "acceptance_criteria": [
+            {
+                "id": 1,
+                "description": "The system shall set the state to 'Pressed' when the parkpilot switch is pressed exclusively."
+            },
+            {
+                "id": 2,
+                "description": "The system shall set the state to 'Released' when the parkpilot switch is not pressed exclusively."
+            },
+            {
+                "id": 3,
+                "description": "The system shall ignore other signals when the parkpilot switch is pressed exclusively."
+            }
+        ],
+        "priority": "High",
+        "dependencies": null
+    },
+    {
+        "id": "REQ-001",
+        "title": "Initial State and Exclusive Press Detection",
+        "description": "The system shall initialize with a default state and detect exclusive press events.",
+        "acceptance_criteria": [
+            {
+                "id": 1,
+                "description": "The system initializes with a default state of 'Released'."
+            },
+            {
+                "id": 2,
+                "description": "The system initializes with exclusive press detection set to False."
+            },
+            {
+                "id": 3,
+                "description": "The system correctly updates the state and exclusive press detection variables when events occur."
+            }
+        ],
+        "priority": "Medium",
+        "dependencies": null
+    }
+]
